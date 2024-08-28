@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="datadriventesting.IntegrateWithExcel">
+      <class name="testngdemo.SoftAssertion">
         <methods>
-          <include name="login" invocation-numbers="1 2 3 4 5"/>
+          <include name="failed"/>
         </methods>
-      </class> <!-- datadriventesting.IntegrateWithExcel -->
+      </class> <!-- testngdemo.SoftAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

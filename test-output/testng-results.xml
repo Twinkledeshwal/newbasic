@@ -1,102 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T22:40:10 IST" name="Suite" finished-at="2024-06-12T22:40:37 IST" duration-ms="26950">
+  <suite started-at="2024-08-25T11:36:00 IST" name="Failed suite [SmokeSuite]" finished-at="2024-08-25T11:36:00 IST" duration-ms="159">
     <groups>
     </groups>
-    <test started-at="2024-06-12T22:40:10 IST" name="Test1" finished-at="2024-06-12T22:40:31 IST" duration-ms="21539">
-      <class name="testngdemo.CrossBrowserTesting">
-        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@27406a17]" started-at="2024-06-12T22:40:10 IST" name="launchbrowser" finished-at="2024-06-12T22:40:14 IST" duration-ms="4733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-08-25T11:36:00 IST" name="Test(failed)" finished-at="2024-08-25T11:36:00 IST" duration-ms="159">
+      <class name="failure.ClassB">
+        <test-method signature="testCase3()[pri:0, instance:failure.ClassB@52719fb6]" started-at="2024-08-25T11:36:00 IST" name="testCase3" finished-at="2024-08-25T11:36:00 IST" duration-ms="41" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at failure.ClassB.testCase3(ClassB.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="orangehrm(java.lang.String,java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@27406a17]" started-at="2024-06-12T22:40:15 IST" name="orangehrm" finished-at="2024-06-12T22:40:31 IST" duration-ms="16643" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testCase3 -->
+      </class> <!-- failure.ClassB -->
+      <class name="failure.ClassA">
+        <test-method signature="testCase1()[pri:0, instance:failure.ClassA@e350b40]" started-at="2024-08-25T11:36:00 IST" name="testCase1" finished-at="2024-08-25T11:36:00 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at failure.ClassA.testCase1(ClassA.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orangehrm -->
-      </class> <!-- testngdemo.CrossBrowserTesting -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-06-12T22:40:10 IST" name="Test3" finished-at="2024-06-12T22:40:35 IST" duration-ms="25454">
-      <class name="testngdemo.CrossBrowserTesting">
-        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@4681c175]" started-at="2024-06-12T22:40:10 IST" name="launchbrowser" finished-at="2024-06-12T22:40:19 IST" duration-ms="9646" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="orangehrm(java.lang.String,java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@4681c175]" started-at="2024-06-12T22:40:19 IST" name="orangehrm" finished-at="2024-06-12T22:40:35 IST" duration-ms="15772" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orangehrm -->
-      </class> <!-- testngdemo.CrossBrowserTesting -->
-    </test> <!-- Test3 -->
-    <test started-at="2024-06-12T22:40:10 IST" name="Test2" finished-at="2024-06-12T22:40:37 IST" duration-ms="26950">
-      <class name="testngdemo.CrossBrowserTesting">
-        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@48bb62]" started-at="2024-06-12T22:40:10 IST" name="launchbrowser" finished-at="2024-06-12T22:40:21 IST" duration-ms="11578" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="orangehrm(java.lang.String,java.lang.String)[pri:0, instance:testngdemo.CrossBrowserTesting@48bb62]" started-at="2024-06-12T22:40:21 IST" name="orangehrm" finished-at="2024-06-12T22:40:37 IST" duration-ms="15332" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orangehrm -->
-      </class> <!-- testngdemo.CrossBrowserTesting -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testCase1 -->
+      </class> <!-- failure.ClassA -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [SmokeSuite] -->
 </testng-results>

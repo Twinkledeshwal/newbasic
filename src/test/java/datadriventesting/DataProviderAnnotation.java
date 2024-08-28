@@ -21,7 +21,7 @@ public class DataProviderAnnotation {
 		
 	}
 	
-	@Test(dataProvider ="container")
+	@Test(dataProvider ="container1")
 	public void login(String username,String password ) {
 
 		
@@ -44,17 +44,26 @@ public class DataProviderAnnotation {
 			{"tom","jerry"},
 			{"ram","shyam"},
 		        };
-		        
+		  }
+	 
+	@DataProvider()
+	public Object[][] container1() {
+		Object[][] data= new Object[2][2];
+		data[0][0]="Admin";
+		data[0][1]="admin123";
+		data[1][0]="tom";
+		data[1][1]="jerry";
+		return data;
 		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-	
+		  }
+
+
+
+
+
+
+
+
+
 
 }
