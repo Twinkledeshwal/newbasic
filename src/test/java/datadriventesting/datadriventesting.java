@@ -14,8 +14,9 @@ public class datadriventesting {
 	
 	@Test
 public void datafetch() throws IOException {
-	
+	//used to create a reference to a file located at the specified path
 	File f1= new File("./src/test/resources/testdata/datadriven.xlsx");
+	//object that allows you to read bytes from the file
 	FileInputStream fis= new FileInputStream(f1);
 	
         XSSFWorkbook book= new XSSFWorkbook(fis);
